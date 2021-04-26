@@ -57,3 +57,10 @@ This is a Codecademy fullstack engineer career path react-redux kanban project.
     *  Command line and file navigation
     *  Wireframing
 
+### Technologies
+* HTML
+* CSS
+* Javascript
+* JSX
+* Git
+
