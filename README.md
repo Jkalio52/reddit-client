@@ -47,15 +47,15 @@ This is a Codecademy fullstack engineer career path react-redux kanban project.
     *  OPTIONAL: Make your application a progressive web app
 
 ### Prerequisites
-    *  HTML
-    *  CSS
-    *  JavaScript
-    *  React
-    *  Redux
-    *  Jest, Enzyme, and Selenium
-    *  Git and GitHub
-    *  Command line and file navigation
-    *  Wireframing
+* HTML
+* CSS
+* JavaScript
+* React
+* Redux
+* Jest, Enzyme, and Selenium
+* Git and GitHub
+* Command line (CLI) and file navigation
+* Wireframing
 
 ### Technologies
 * HTML
