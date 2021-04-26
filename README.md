@@ -7,7 +7,7 @@ This is a Codecademy fullstack engineer career path react-redux kanban project.
 ## Table of Contents
 1. [Introduction <a name="introduction"></a>](https://github.com/Jkalio52/reddit-client#introduction)
 2. [Project Requirements <a name="project-requirements"></a>](https://github.com/Jkalio52/reddit-client#project-requirements)
-3. [Prerequisites](https://github.com/Jkalio52/reddit-client#prerequisites)
+3. [Prerequisites <a name="prerequisites"></a>](https://github.com/Jkalio52/reddit-client#prerequisites)
 4. [Technologies](https://github.com/Jkalio52/reddit-client#technologies)
 5. [Setup](https://github.com/Jkalio52/reddit-client#setup)
 6. [Frameworks (libraries)](https://github.com/Jkalio52/reddit-client#frameworks)
