@@ -4,7 +4,7 @@ For this project, you will build an application for Reddit using everything yo
 
 ## Table of Contents
 1. [Introduction](https://github.com/Jkalio52/reddit-client)
-2. Prerequisites
+2. [Prerequisites](https://github.com/Jkalio52/reddit-client)
 3. Technologies
 4. Setup
 5. Frameworks (libraries)
