@@ -1,6 +1,6 @@
 .card {
    width: 1fr;
-   /*height: 1fr;*/
+   /*height: 30rem;*/
    background: var(--color-background #000);
    box-shadow: var(--box-shadow);
    margin-bottom: var(--spacing-4);
