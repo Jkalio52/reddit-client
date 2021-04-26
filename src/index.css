@@ -30,7 +30,7 @@ header {
   align-content: center;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 455px) {
   #root {
     grid-template-columns: 1fr;
   }
