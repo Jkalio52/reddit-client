@@ -1,7 +1,7 @@
 # Reddit Client
 
-## Screenshot
-reddit-client-screenshot.png
+![Screenshot]
+(reddit-client-screenshot.png)
 
 ### Introduction
 This is a Codecademy fullstack engineer career path react-redux kanban project.
