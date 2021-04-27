@@ -2,24 +2,27 @@
 
 ![Screenshot](reddit-client-screenshot.png)
 
+
 ### Introduction
 This is a Codecademy fullstack engineer career path react-redux kanban project.
 "For this project, you will build an application for Reddit using everything you’ve learned, including React and Redux. Reddit is a website where people share links to articles, media and other things on the web. The Reddit API provides data which you will integrate into your application. The application will allow users to view and search posts and comments provided by the API."
+
 
 ## Table of Contents
 1. [Introduction <a name="introduction"></a>](https://github.com/Jkalio52/reddit-client#introduction)
 2. [Project Requirements <a name="project-requirements"></a>](https://github.com/Jkalio52/reddit-client#project-requirements)
 3. [Prerequisites <a name="prerequisites"></a>](https://github.com/Jkalio52/reddit-client#prerequisites)
-4. [Technologies](https://github.com/Jkalio52/reddit-client#technologies)
-5. [Setup](https://github.com/Jkalio52/reddit-client#setup)
-6. [Frameworks (libraries)](https://github.com/Jkalio52/reddit-client#frameworks)
-7. [Lighthouse Score](https://github.com/Jkalio52/reddit-client#lighthouse-score)
-8. [Additional Technologies](https://github.com/Jkalio52/reddit-client#additional-technologies)
-9. [Testing](https://github.com/Jkalio52/reddit-client#testing)
-10. [Deployment](https://github.com/Jkalio52/reddit-client#deployment)
-11. [Files structure](https://github.com/Jkalio52/reddit-client#files-structure)
-12. [In Progress Work](https://github.com/Jkalio52/reddit-client#inProgressWork)
-13. [Issues / bugs](https://github.com/Jkalio52/reddit-client#issues-bugs)
+4. [Technologies <a name="technologies"></a>](https://github.com/Jkalio52/reddit-client#technologies)
+5. [Setup <a name="setup"></a>](https://github.com/Jkalio52/reddit-client#setup)
+6. [Frameworks (libraries) <a name="frameworks"></a>](https://github.com/Jkalio52/reddit-client#frameworks)
+7. [Lighthouse Score <a name="lighthouse-scrore"></a>](https://github.com/Jkalio52/reddit-client#lighthouse-score)
+8. [Additional Technologies <a name="additional-technologies"></a>](https://github.com/Jkalio52/reddit-client#additional-technologies)
+9. [Testing <a name="testing"></a>](https://github.com/Jkalio52/reddit-client#testing)
+10. [Deployment <a name="deploy-technology"></a>](https://github.com/Jkalio52/reddit-client#deployment)
+11. [Files structure <a name="files-structure"></a>](https://github.com/Jkalio52/reddit-client#files-structure)
+12. [In Progress Work <a name="in-progress"></a>](https://github.com/Jkalio52/reddit-client#inProgressWork)
+13. [Issues / bugs <a name="bugs"></a>](https://github.com/Jkalio52/reddit-client#issues-bugs)
+
 
 ### Project Requirements
     *  Build the application using React and Redux
@@ -48,6 +51,7 @@ This is a Codecademy fullstack engineer career path react-redux kanban project.
     *  OPTIONAL: Set up a CI/CD workflow to automatically deploy your application when the master branch in the repository changes
     *  OPTIONAL: Make your application a progressive web app
 
+
 ### Prerequisites
 * HTML
 * CSS
@@ -59,12 +63,14 @@ This is a Codecademy fullstack engineer career path react-redux kanban project.
 * Command line (CLI) and file navigation
 * Wireframing
 
+
 ### Technologies
 * HTML
 * CSS
 * Javascript
 * JSX
 * Git
+
 
 ### Frameworks
 * React
@@ -77,22 +83,29 @@ This is a Codecademy fullstack engineer career path react-redux kanban project.
 * react-animated-list
 * react-loading-skeleton
 
+
 ### Testing Technology
 * testing-library/jest-dom
 
+
 ### Deploy Technology
 * Netlify (in-progress)
+
 
 ### Other Technologies
 * Git
 * GitHub
 * VS Code
 
+
 ### Needs Work / In-progress
+* Lighthouse Score
 * Responsive (mobile screens)
+
 
 ### Known Bugs
 * None
+
 
 ### API / Credits
 * https://www.reddit.com/dev/api/
