@@ -66,3 +66,34 @@ This is a Codecademy fullstack engineer career path react-redux kanban project.
 * JSX
 * Git
 
+### Frameworks
+* React
+* Redux
+* Moment
+* react-icons
+* react-redux
+* Redux Toolkit
+* react-markdown
+* react-animated-list
+* react-loading-skeleton
+
+### Testing Technology
+* testing-library/jest-dom
+
+### Deploy Technology
+* Netlify (in-progress)
+
+### Other Technologies
+* Git
+* GitHub
+* VS Code
+
+### Needs Work / In-progress
+* Responsive (mobile screens)
+
+### Known Bugs
+* None
+
+### API / Credits
+* (https://www.reddit.com/dev/api/)
+
