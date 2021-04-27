@@ -82,10 +82,22 @@ This is a Codecademy fullstack engineer career path react-redux kanban project.
 * react-markdown
 * react-animated-list
 * react-loading-skeleton
+* testing-library/jest-dom
+
+
+### Lighthouse Score
+* Get 90+ scores on [Lighthouse](https://web.dev/measure/)
+
+
+### Setup
+* Build the application using React and Redux
+* Version control your application with Git and host the repository on GitHub
+* Write unit tests for your components using Jest and Enzyme
 
 
 ### Testing Technology
-* testing-library/jest-dom
+* Jest
+* Enzyme
 
 
 ### Deploy Technology
