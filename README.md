@@ -95,5 +95,5 @@ This is a Codecademy fullstack engineer career path react-redux kanban project.
 * None
 
 ### API / Credits
-* (https://www.reddit.com/dev/api/)
+* https://www.reddit.com/dev/api/
 
