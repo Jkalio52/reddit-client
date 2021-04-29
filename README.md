@@ -100,14 +100,14 @@ This is a Codecademy fullstack engineer career path react-redux kanban project.
 * Enzyme
 
 
-### Deploy Technology
-* Netlify (in-progress)
-
-
 ### Other Technologies
 * Git
 * GitHub
 * VS Code
+
+
+### Deploy Technology
+* Netlify (in-progress)
 
 
 ### Needs Work / In-progress
