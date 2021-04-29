@@ -16,10 +16,10 @@ This is a Codecademy fullstack engineer career path react-redux kanban project.
 5. [Frameworks (libraries) <a name="frameworks"></a>](https://github.com/Jkalio52/reddit-client#frameworks)
 6. [Lighthouse Score <a name="lighthouse-scrore"></a>](https://github.com/Jkalio52/reddit-client#lighthouse-score)
 7. [Setup <a name="setup"></a>](https://github.com/Jkalio52/reddit-client#setup)
-8. [Testing <a name="testing-technology"></a>](https://github.com/Jkalio52/reddit-client#testing-technology)
-9. [Other Technologies <a name="other-technologies"></a>](https://github.com/Jkalio52/reddit-client#other-technologies)
-10. [Deployment <a name="deploy-technology"></a>](https://github.com/Jkalio52/reddit-client#deploy-technology)
-11. [Files structure <a name="files-structure"></a>](https://github.com/Jkalio52/reddit-client#files-structure)
+8. [Files Structure <a name="files-structure"></a>](https://github.com/Jkalio52/reddit-client#files-structure)
+9. [Testing <a name="testing-technology"></a>](https://github.com/Jkalio52/reddit-client#testing-technology)
+10. [Other Technologies <a name="other-technologies"></a>](https://github.com/Jkalio52/reddit-client#other-technologies)
+11. [Deployment <a name="deploy-technology"></a>](https://github.com/Jkalio52/reddit-client#deploy-technology)
 12. [In Progress Work <a name="in-progress"></a>](https://github.com/Jkalio52/reddit-client#inProgressWork)
 13. [Issues / bugs <a name="bugs"></a>](https://github.com/Jkalio52/reddit-client#issues-bugs)
 
@@ -93,6 +93,10 @@ This is a Codecademy fullstack engineer career path react-redux kanban project.
 * Build the application using React and Redux
 * Version control your application with Git and host the repository on GitHub
 * Write unit tests for your components using Jest and Enzyme
+
+
+### Files Structure
+* In-progress
 
 
 ### Testing Technology
