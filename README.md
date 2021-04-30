@@ -20,7 +20,7 @@ This is a Codecademy fullstack engineer career path react-redux kanban project.
 9. [Testing <a name="testing-technology"></a>](https://github.com/Jkalio52/reddit-client#testing-technology)
 10. [Other Technologies <a name="other-technologies"></a>](https://github.com/Jkalio52/reddit-client#other-technologies)
 11. [Deployment <a name="deploy-technology"></a>](https://github.com/Jkalio52/reddit-client#deploy-technology)
-12. [In Progress Work <a name="in-progress"></a>](https://github.com/Jkalio52/reddit-client#in-progress)
+12. [In-Progress Work <a name="in-progress"></a>](https://github.com/Jkalio52/reddit-client#in-progress)
 13. [Issues / bugs <a name="bugs"></a>](https://github.com/Jkalio52/reddit-client#issues-bugs)
 
 
