@@ -128,4 +128,3 @@ This is a Codecademy fullstack engineer career path react-redux kanban project.
 
 ### API
 * https://www.reddit.com/dev/api/
-
