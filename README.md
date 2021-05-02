@@ -1,6 +1,6 @@
 # Reddit Client
 
-![Screenshot](reddit-client-screenshot.png)
+![Screenshot](reddit-client.png)
 
 
 ### Introduction
