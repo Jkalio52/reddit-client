@@ -114,7 +114,7 @@ This is a Codecademy fullstack engineer career path react-redux kanban project.
 * Netlify (in-progress)
 
 
-### In-progress (needs work)
+### In-progress
 * Lighthouse Score
 * Responsive (mobile screens)
 
