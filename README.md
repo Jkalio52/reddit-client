@@ -22,7 +22,7 @@ This is a Codecademy fullstack engineer career path react-redux kanban project.
 11. [Deployment <a name="deploy-technology"></a>](https://github.com/Jkalio52/reddit-client#deploy-technology)
 12. [In-Progress Work <a name="in-progress"></a>](https://github.com/Jkalio52/reddit-client#in-progress)
 13. [Issues / bugs <a name="known-bugs"></a>](https://github.com/Jkalio52/reddit-client#known-bugs)
-14. [API / Credits <a name="api-credits"></a>](https://github.com/Jkalio52/reddit-client#api-credits)
+14. [API / Credits <a name="api-credits"></a>](https://github.com/Jkalio52/reddit-client#api&credits)
 
 
 ### Project Requirements
