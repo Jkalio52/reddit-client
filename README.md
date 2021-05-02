@@ -26,6 +26,7 @@ This is a Codecademy fullstack engineer career path react-redux kanban project.
 
 
 ### Project Requirements
+* Build the application using React and Redux
     *  Build the application using React and Redux
     *  Version control your application with Git and host the repository on GitHub
     *  Use a project management tool (GitHub Projects, Trello, etc.) to plan your work
