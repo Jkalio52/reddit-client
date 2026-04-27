@@ -114,7 +114,7 @@ This is a Codecademy fullstack engineer career path react-redux kanban project.
 
 
 ### Deploy Technology
-* Netlify (in-progress)
+* Netlify
 
 
 ### In-progress

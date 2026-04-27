@@ -1,14 +1,60 @@
-.post-votes-value-loading {
-   width: 2ch !important;
+/* src/features/Post/PostLoading.css */
+
+/* Base Skeleton styles we were trying to import */
+.react-loading-skeleton {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+      90deg,
+      #1a1a1a,
+      #2a2a2a,
+      #1a1a1a
+  );
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  line-height: 1;
+  animation: skeleton-shimmer 1.5s ease-in-out infinite;
 }
 
-.post {
-   display: flex;
-   background: var(--color-foreground);
-   box-shadow: var(--box-shadow);
-   margin-bottom: var(--spacing-4);
-   border-radius: var(--radius);
-   padding: var(--spacing-3);
-   transition: box-shadow 0.3s ease-in;
-   color: var(--color-text-secondary);
+@keyframes skeleton-shimmer {
+  0% {
+      background-position: -200px 0;
+  }
+  100% {
+      background-position: calc(200px + 100%) 0;
+  }
+}
+
+.post-loading-card {
+background: var(--color-background-secondary);
+border: 1px solid rgba(255, 255, 255, 0.05);
+border-radius: var(--radius);
+margin-bottom: var(--spacing-3);
+overflow: hidden;
+}
+
+.loading-wrapper {
+display: flex;
+}
+
+.loading-votes {
+padding: var(--spacing-2) var(--spacing-1);
+background: rgba(255, 255, 255, 0.02);
+border-right: 1px solid rgba(255, 255, 255, 0.05);
+display: flex;
+justify-content: center;
+}
+
+.loading-content {
+padding: var(--spacing-2);
+flex-grow: 1;
+}
+
+.loading-details {
+display: flex;
+align-items: center;
+gap: 12px;
+margin-top: var(--spacing-2);
 }

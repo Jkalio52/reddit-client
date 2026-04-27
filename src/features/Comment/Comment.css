@@ -1,27 +1,44 @@
+/* src/features/Comment/Comment.css */
 .comment {
-   background: var(--color-background);
-   margin: var(--spacing-1) 0;
    padding: var(--spacing-2);
-   transition: box-shadow 0.1s ease-in;
-   border-radius: var(--border-radius);
-}
+   margin-top: var(--spacing-2);
+   background: rgba(255, 255, 255, 0.02);
+   border-radius: var(--radius);
+   border-left: 2px solid rgba(0, 242, 255, 0.1); /* Subtle thread line */
+   transition: background 0.2s ease, border-left-color 0.2s ease;
+ }
  
-.comment:hover {
-   box-shadow: var(--box-shadow);
-}
+ .comment:hover {
+   background: rgba(255, 255, 255, 0.04);
+   border-left-color: #00f2ff; /* Brightens on hover */
+ }
  
-.comment-metadata {
+ .comment-metadata {
    display: flex;
-   margin-bottom: var(--spacing-2);
    align-items: center;
-}
+   gap: 8px;
+   margin-bottom: var(--spacing-1);
+ }
  
-.comment-created-time {
-   margin-left: auto;
-   font-style: italic;
-}
+ .comment-author {
+   font-weight: 700;
+   color: var(--color-text-header);
+   font-size: 0.9rem;
+ }
  
-.comment-author {
-   font-weight: bold;
-   color: var(--color-branding);
-}
+ .comment-created-time {
+   color: var(--color-text-body);
+   font-size: 0.8rem;
+ }
+ 
+ .comment-body {
+   color: var(--color-text-secondary);
+   font-size: 0.95rem;
+   line-height: 1.5;
+   padding-left: 38px; /* Aligns text with the author name, bypassing the avatar */
+ }
+ 
+ .comment-body p {
+   margin-bottom: 8px;
+ }
+ 

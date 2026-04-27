@@ -1,49 +1,136 @@
-header .logo {
-   font-weight: bold;
-   padding: var(--spacing-1) 0;
-   grid-column: 1/2;
+/* src/features/Header/Header.css */ 
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 var(--spacing-3);
+   height: 70px;
+   
+   /* Glassmorphism Effect */
+   background: rgba(18, 18, 18, 0.8); 
+   backdrop-filter: blur(12px);
+   -webkit-backdrop-filter: blur(12px);
+   
+   /* Sticky & Layered */
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+   border-bottom: 1px solid var(--color-border);
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+ }
+ 
+ .logo {
    display: flex;
    align-items: center;
-}
-
-header {
-   width: 90%;
-   color: var(--color-branding);
-   background: var(--color-background #000);
-   box-shadow: var(--box-shadow);
-   height: 74px;
-   padding: 0 var(--spacing-5);
-}
-
-header .logo-icon {
-   grid-column: 2/3;
-   margin-right: var(--spacing-1);
-   font-size: 2.6rem;
-}
-
-header span {
-   color: var(--color-text-header);
-}
-
-.search {
+   gap: var(--spacing-1);
+ }
+ 
+ .logo-icon {
+   font-size: 2.5rem;
+   color: var(--color-branding); /* This is your Neon Red */
+   filter: drop-shadow(0 0 8px rgba(255, 0, 85, 0.4));
+ }
+ 
+ .logo p {
+   color: var(--color-foreground);
+   font-weight: 800;
+   font-size: 1.2rem;
+   letter-spacing: -0.5px;
+ }
+ 
+ .logo span {
+   color: var(--color-text-body);
+   font-weight: 400;
+ }
+ 
+ /* Search Bar Glow-Up */
+ .search {
    display: flex;
-   align-items: flex-end;
-   float: right;
-}
-
-.search input {
-   flex-grow: 1;
-   background: var(--color-background-secondary);
-   border: none;
-   padding: var(--spacing-1) var(--spacing-2);
-   height: max-content;
+   align-items: center;
+   background: rgba(255, 255, 255, 0.05);
+   border: 1px solid var(--color-border);
    border-radius: var(--radius);
+   padding: 4px 12px;
+   transition: all 0.3s ease;
+   width: 40%;
+ }
+ 
+ .search:focus-within {
+   background: rgba(255, 255, 255, 0.1);
+   border-color: var(--color-branding);
+   box-shadow: 0 0 15px rgba(255, 0, 85, 0.2);
+ }
+ 
+ .search input {
+   background: transparent;
+   border: none;
+   color: var(--color-foreground);
+   padding: 8px;
+   width: 100%;
+   outline: none;
+   font-size: 0.95rem;
+ }
+ 
+ .search button {
+   background: transparent;
+   border: none;
+   color: var(--color-text-body);
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   font-size: 1.2rem;
+   transition: color 0.2s;
+ }
+ 
+ .search button:hover {
+   color: var(--color-branding);
+ }
+ 
+ @media only screen and (max-width: 600px) {
+   header {
+     flex-direction: column;
+     height: auto;
+     padding: var(--spacing-2);
+   }
+   .search {
+     width: 100%;
+     margin-top: var(--spacing-1);
+   }
+ }
+ 
+/* Mobile Drawer Transition */
+/* Add this to src/features/Header/Header.css */
+/* We want this button to be hidden on desktop and pop into existence on mobile */
+
+.menu-button {
+  display: none; /* Hidden by default (Desktop) */
+  background: transparent;
+  border: none;
+  color: var(--color-text-header);
+  cursor: pointer;
+  padding: 8px;
+  margin-right: 12px;
+  transition: color 0.2s ease;
 }
 
-.search button {
-   background: none;
-   border: none;
-   cursor: pointer;
-   color: var(--color-text-secondary);
-   font-size: 2rem;
+.menu-button:hover {
+  color: #00f2ff; /* Electric Cyan hover */
+}
+
+.menu-button.active {
+  color: #00f2ff;
+}
+
+/* Mobile Media Query */
+@media (max-width: 768px) {
+  .menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
 }

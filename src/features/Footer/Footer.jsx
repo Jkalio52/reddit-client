@@ -1,4 +1,4 @@
-import { HiOutlineSearch } from 'react-icons/hi';
+// src/features/Footer/Footer.jsx
 import './Footer.css';
 import { FaReddit } from 'react-icons/fa';
 
@@ -10,7 +10,7 @@ const Footer = () => {
          <div className="logo">
             <FaReddit className="logo-icon" />
             <p>
-               Reddit<span> Client</span> | <span>Jay Kalio 2021 | </span><a className="apiLink" href="https://www.reddit.com/dev/api/" target="_blank" rel="noreferrer">Reddit API</a>
+               Reddit<span> Viewer</span> | <span>Jay Kalio 2021-26 | </span><a className="apiLink" href="https://www.reddit.com/dev/api/" target="_blank" rel="noreferrer">Reddit API</a>
             </p>
          </div>
       </footer>

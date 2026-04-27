@@ -1,46 +1,68 @@
+/* src/features/Subreddits/Subreddits.css */
 .subreddit-card {
-   padding-right: var(--spacing-2);
-}
-
-.subreddit-card h2 {
-   margin-top: 0;
-   color: var(--color-text-header);
-}
-
-.subreddit-card button {
-   background: none;
-   border: none;
-   display: flex;
-   align-items: center;
-   color: var(--color-text-body);
-   font-weight: 600;
-   cursor: pointer;
-   width: 100%;
-   padding: var(--spacing-2);
+   background: var(--color-background-secondary);
    border-radius: var(--radius);
-}
-
-.selected-subreddit button {
-   color: var(--color-branding) !important;
-}
-
-.selected-subreddit {
-   border-left: 5px solid var(--color-branding);
-   background: var(--color-branding-transparent);
-}
-
-.subreddit-card button:hover {
-   background: var(--color-on-hover-2);
-}
-
-.subreddits-list {
+   border: 1px solid rgba(255, 255, 255, 0.05);
+   padding: var(--spacing-2);
+ }
+ 
+ .subreddit-card h2 {
+   color: var(--color-foreground);
+   font-size: 1.5rem;
+   margin-bottom: 4px;
+ }
+ 
+ .subreddit-card h3 {
+   color: var(--color-text-body);
+   font-size: 0.85rem;
+   margin-bottom: var(--spacing-2);
+   text-transform: uppercase;
+   letter-spacing: 1px;
+ }
+ 
+ .subreddits-list {
    list-style: none;
    padding: 0;
-}
-
-.subreddit-icon {
-   height: 25px;
-   width: 25px;
+   margin: 0;
+ }
+ 
+ .subreddits-list li {
+   margin-bottom: 4px;
+ }
+ 
+ .subreddits-list button {
+   display: flex;
+   align-items: center;
+   width: 100%;
+   background: transparent;
+   border: none;
+   color: var(--color-text-header);
+   padding: 10px;
+   border-radius: 8px;
+   cursor: pointer;
+   transition: all 0.2s ease;
+   font-size: 0.95rem;
+   font-weight: 500;
+ }
+ 
+ .subreddits-list button:hover {
+   background: rgba(255, 255, 255, 0.05);
+   transform: translateX(4px); /* Smooth hover slide */
+ }
+ 
+ /* The Active State Glow */
+ .selected-subreddit button {
+   background: rgba(0, 242, 255, 0.1);
+   color: #00f2ff;
+   border-right: 3px solid #00f2ff;
+   border-radius: 8px 0 0 8px;
+ }
+ 
+ .subreddit-icon {
+   width: 30px;
+   height: 30px;
    border-radius: 50%;
-   margin-right: var(--spacing-1);
-}
+   margin-right: 12px;
+   background: #ffffff; /* Safety backdrop for transparent PNGs */
+   object-fit: cover;
+ }

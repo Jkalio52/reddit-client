@@ -1,65 +1,32 @@
+// src/features/Post/PostLoading.jsx
 import React from 'react';
-import Skeleton from 'react-loading-skeleton';
-import './Post.css';
+import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
+//import 'react-loading-skeleton/dist/index.css';
 import './PostLoading.css';
-import {
-  TiArrowUpOutline,
-  TiArrowDownOutline,
-  TiMessage,
-} from 'react-icons/ti';
-import getRandomNumber from '../../utils/getRandomNumber';
 
 
 const PostLoading = () => {
-   return (
-      <article className="post">
-         <div className="post-votes-container">
-            <button
-               type="button"
-               className="icon-action-button up-vote"
-               aria-label="Up vote"
-            >
-               <TiArrowUpOutline className="icon-action" />
-            </button>
-            <Skeleton className="post-votes-value post-votes-value-loading" />
-            <button
-               type="button"
-               className="icon-action-button down-vote"
-               aria-label="Down vote"
-            >
-               <TiArrowDownOutline className="icon-action" />
-            </button>
-         </div>
-         <div className="post-container">
-            <h3 className="post-title">
-               <Skeleton width={getRandomNumber(100, 200)} />
-            </h3>
-
-            <div className="post-image-container">
-               <Skeleton height={250} />
+  return (
+    <div className="post-loading-card">
+      {/* Matching our obsidian card base and highlight colors */}
+      <SkeletonTheme baseColor="#1a1a1a" highlightColor="#2a2a2a">
+        <div className="loading-wrapper">
+          <div className="loading-votes">
+            <Skeleton width={30} height={100} />
+          </div>
+          <div className="loading-content">
+            <Skeleton width="80%" height={24} style={{ marginBottom: '1rem' }} />
+            <Skeleton height={250} />
+            <div className="loading-details">
+              <Skeleton circle width={30} height={30} />
+              <Skeleton width={100} height={15} />
+              <Skeleton width={80} height={15} />
             </div>
-
-            <div className="post-details">
-               <span>
-                  <Skeleton width={getRandomNumber(20, 50)} />
-               </span>
-               <span>
-                  <Skeleton width={getRandomNumber(50, 100)} />
-               </span>
-               <span className="post-comments-container">
-                  <button
-                  type="button"
-                  className="icon-action-button"
-                  aria-label="Show comments"
-                  >
-                     <TiMessage className="icon-action" />
-                  </button>
-                  <Skeleton width={getRandomNumber(10, 50)} />
-               </span>
-            </div>
-         </div>
-      </article>
-   );
+          </div>
+        </div>
+      </SkeletonTheme>
+    </div>
+  );
 };
 
 export default PostLoading;
