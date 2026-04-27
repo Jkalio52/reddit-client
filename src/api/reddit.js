@@ -1,24 +1,19 @@
 // src/api/reddit.js
-export const API = ''; 
+export const API_ROOT = 'https://www.reddit.com'; // Absolute path for production
 
-// 1. Get Posts (Subreddit or Search)
 export const getSubredditPosts = async (subreddit, after = null, searchTerm = '') => {
   try {
     const cleanSubreddit = subreddit.replace(/\/$/, "");
     let url = "";
 
     if (searchTerm) {
-      // Search within the specific subreddit
-      url = `${cleanSubreddit}/search.json?q=${encodeURIComponent(searchTerm)}&restrict_sr=1${after ? `&after=${after}` : ''}`;
+      url = `${API_ROOT}${cleanSubreddit}/search.json?q=${encodeURIComponent(searchTerm)}&restrict_sr=1${after ? `&after=${after}` : ''}`;
     } else {
-      // Standard subreddit feed
-      url = `${cleanSubreddit}.json${after ? `?after=${after}` : ''}`;
+      url = `${API_ROOT}${cleanSubreddit}.json${after ? `?after=${after}` : ''}`;
     }
     
     const response = await fetch(url);
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
     const json = await response.json();
 
     return {
@@ -31,10 +26,10 @@ export const getSubredditPosts = async (subreddit, after = null, searchTerm = ''
   }
 };
 
-// 2. Get Sub-reddits
+// Update these to use API_ROOT as well:
 export const getSubreddits = async () => {
   try {
-    const response = await fetch(`/subreddits.json`);
+    const response = await fetch(`${API_ROOT}/subreddits.json`);
     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
     const json = await response.json();
     return json.data.children.map((subreddit) => subreddit.data);
@@ -44,11 +39,10 @@ export const getSubreddits = async () => {
   }
 };
 
-// 3. Get Post Comments
 export const getPostComments = async (permalink) => {
   try {
     const cleanPermalink = permalink.replace(/\/$/, "");
-    const response = await fetch(`${cleanPermalink}.json`);
+    const response = await fetch(`${API_ROOT}${cleanPermalink}.json`);
     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
     const json = await response.json();
     return json[1].data.children.map((comment) => comment.data);
