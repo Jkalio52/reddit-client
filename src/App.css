@@ -14,10 +14,21 @@
 
 /* --- THE MOBILE OVERFLOW FIX --- */
 /* This ensures Reddit's massive images never stretch wider than the screen */
-img, video, iframe {
-  max-width: 100%;
-  height: auto;
-  display: block;
+/* src/app.css */
+
+/* THE SLEDGEHAMMER: Force all media to stay within the screen */
+img, video, iframe, .post-image, .post-container {
+  max-width: 100% !important;
+  height: auto !important;
+  box-sizing: border-box !important;
+}
+
+/* Ensure the body itself cannot scroll sideways */
+html, body {
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+  margin: 0;
+  padding: 0;
 }
 
 body {
