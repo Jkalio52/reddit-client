@@ -122,3 +122,28 @@
    color: #00f2ff !important;
  }
  
+ /* src/features/Post/Post.css - Mobile Refinement */
+
+@media (max-width: 480px) {
+  .post-wrapper {
+    flex-direction: column; /* Stack votes and content vertically */
+  }
+
+  .post-votes-container {
+    flex-direction: row; /* Horizontal voting bar */
+    justify-content: flex-start;
+    gap: var(--spacing-2);
+    padding: var(--spacing-1) var(--spacing-2);
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .post-votes-value {
+    margin: 0; /* Align with horizontal buttons */
+  }
+
+  .post-title {
+    font-size: 1.1rem; /* Slightly smaller for mobile screens */
+  }
+}
