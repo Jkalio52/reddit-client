@@ -1,1 +1,5 @@
-/* /index.html   200
+# 1. API Proxy: Route all /api requests to Reddit (MUST BE FIRST)
+/api/*  https://www.reddit.com/:splat  200
+
+# 2. SPA Fallback: Route everything else to React (MUST BE LAST)
+/*      /index.html   200
