@@ -1,5 +1,9 @@
 // src/api/reddit.js
-export const API_ROOT = 'https://www.reddit.com'; // Absolute path for production
+
+// FIXED: Changed from 'https://www.reddit.com' to '/api'.
+// This forces all outgoing traffic to go through your Netlify proxy setup in _redirects.
+// Netlify handles the handshake on the server side, bypassing the browser's CORS block completely.
+export const API_ROOT = '/api'; 
 
 export const getSubredditPosts = async (subreddit, after = null, searchTerm = '') => {
   try {
@@ -26,7 +30,7 @@ export const getSubredditPosts = async (subreddit, after = null, searchTerm = ''
   }
 };
 
-// Update these to use API_ROOT as well:
+// Now seamlessly utilizing the API_ROOT proxy prefix
 export const getSubreddits = async () => {
   try {
     const response = await fetch(`${API_ROOT}/subreddits.json`);
@@ -39,6 +43,7 @@ export const getSubreddits = async () => {
   }
 };
 
+// Now seamlessly utilizing the API_ROOT proxy prefix
 export const getPostComments = async (permalink) => {
   try {
     const cleanPermalink = permalink.replace(/\/$/, "");
