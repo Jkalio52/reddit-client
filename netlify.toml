@@ -9,4 +9,4 @@
   [redirects.headers]
     # Standard format required by Reddit: <platform>:<app ID>:<version> (by <creator>)
     # This tells Reddit's firewall that this is a verified, custom web app.
-    User-Agent = "web:reddit-viewer-v2:1.0.0 (by Pedia Digital LLC)"
+    User-Agent = "web:reddit-viewer-v2:1.0.0 (by /u/Jay52_TX)"
