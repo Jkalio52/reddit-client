@@ -3,12 +3,10 @@
 
 [[redirects]]
   from = "/api/*"
-  to = "https://reddit.com"
+  to = "https://www.reddit.com/:splat"
   status = 200
   force = true
   [redirects.headers]
-    User-Agent = "web:custom-portfolio-viewer:1.0.3 (by /u/Jay52_TX)"
-    # Explicitly clear internal headers to minimize bot footprint detection
-    Authorization = ""
-    Cookie = ""
-    X-From = ""
+    # Standard format required by Reddit: <platform>:<app ID>:<version> (by <creator>)
+    # This tells Reddit's firewall that this is a verified, custom web app.
+    User-Agent = "web:reddit-viewer-v2:1.0.0 (by /u/Jay52_TX)"
