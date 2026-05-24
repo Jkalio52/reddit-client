@@ -3,7 +3,7 @@
 // We are bypassing the Netlify proxy and Reddit's data-center block 
 // by routing our requests through a public CORS proxy.
 export const REDDIT_ROOT = 'https://www.reddit.com';
-const PROXY_ROOT = 'https://api.allorigins.win/raw?url=';
+const PROXY_ROOT = 'https://corsproxy.io/?url=';
 
 export const getSubredditPosts = async (subreddit, after = null, searchTerm = '') => {
   try {
